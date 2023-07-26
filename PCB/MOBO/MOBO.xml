@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/chuck/Projects/GBA-SPi/PCB/MOBO/MOBO.kicad_sch</source>
+    <date>sab 10 giu 2023, 10:14:00</date>
+    <tool>Eeschema 6.0.11-3.fc37</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Power Circuit</title>
+        <company/>
+        <rev>0.1</rev>
+        <date>2023-06-06</date>
+        <source>MOBO.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Power &amp; Charging.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/USB Controller/" tstamps="/59c7985f-016b-47ed-87ab-98a7dfa9c79d/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>USB Controller.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/USB LAN Controller/" tstamps="/e586924b-229a-43da-a1a4-83bd78718623/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>USB LAN Controller.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Joystick/" tstamps="/7ca0e1b4-2467-452a-8d82-c598e33fab6f/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Joystick.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J101">
+      <value>USB_A</value>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="USB_A" description="USB Type A connector"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MOBO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ae2b959-9c1f-4975-a603-fae2290380f8</tstamps>
+    </comp>
+    <comp ref="J102">
+      <value>RJ45</value>
+      <libsource lib="Connector" part="RJ45" description="RJ connector, 8P8C (8 positions 8 connected)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MOBO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc2927aa-8ec4-43eb-be9a-0d6764b1ae23</tstamps>
+    </comp>
+    <comp ref="J103">
+      <value>RPi_GPio</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_DIN965_Pad</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x20_Odd_Even" description="Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MOBO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48228de5-de07-4c3b-b386-d217bda3f434</tstamps>
+    </comp>
+    <comp ref="J104">
+      <value>RPi_GND</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MOBO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c852ae3-ca9f-4b6f-b854-c8d8dfdc189c</tstamps>
+    </comp>
+    <comp ref="J105">
+      <value>RPi_5V</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MOBO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8fea7aee-65e5-4e34-8893-dc113f6fa704</tstamps>
+    </comp>
+    <comp ref="J106">
+      <value>RPi_DM</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MOBO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c205b51-97f8-4044-b3cd-6ab2eee45643</tstamps>
+    </comp>
+    <comp ref="J107">
+      <value>RPi_DM</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MOBO.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5fa4b8dd-e641-4fcb-83a5-645c92c1c12f</tstamps>
+    </comp>
+    <comp ref="BT201">
+      <value>Battery_Cell</value>
+      <footprint>Connector_Molex:Molex_CLIK-Mate_502386-0270_1x02-1MP_P1.25mm_Horizontal</footprint>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>4a4f47f0-8cca-4503-a3cf-da9994ca53ee</tstamps>
+    </comp>
+    <comp ref="C201">
+      <value>4.7uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>737b1931-b3b1-47e6-9cb4-9186054e5246</tstamps>
+    </comp>
+    <comp ref="C202">
+      <value>4.7uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>14596896-b9bf-4142-b0a3-950f8fc68de3</tstamps>
+    </comp>
+    <comp ref="C203">
+      <value>10uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>99ab29c9-7157-4c41-8cb6-f58b322b467a</tstamps>
+    </comp>
+    <comp ref="C204">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>2728f9b4-c398-4e4e-9e7d-6e8456ce3269</tstamps>
+    </comp>
+    <comp ref="C205">
+      <value>10nF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>27605b0f-f3db-48c5-bf6e-2f180775cf63</tstamps>
+    </comp>
+    <comp ref="C206">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>83593b68-5e4d-4c72-ab27-76fe791c17ae</tstamps>
+    </comp>
+    <comp ref="C207">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>ff93d4bd-0257-4f38-82b0-4f2013f307f2</tstamps>
+    </comp>
+    <comp ref="C208">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>0543f20a-4f1f-419b-81f5-5a27e4a551eb</tstamps>
+    </comp>
+    <comp ref="C209">
+      <value>4.7uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>f5219b10-4cdc-41d7-9d01-5de854765418</tstamps>
+    </comp>
+    <comp ref="C210">
+      <value>4.7uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>21a72382-a3a7-4b99-adf5-383b5969449a</tstamps>
+    </comp>
+    <comp ref="C211">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>792f315a-40cf-4f67-ad92-4dc135f143d4</tstamps>
+    </comp>
+    <comp ref="C212">
+      <value>10nF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>966bb5a3-b081-4479-9a8e-37da37bf9a98</tstamps>
+    </comp>
+    <comp ref="C213">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>555972ab-4187-4fcf-a835-0883a415c6b5</tstamps>
+    </comp>
+    <comp ref="C214">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>a173a564-2d40-4b02-b132-29242e617dea</tstamps>
+    </comp>
+    <comp ref="C215">
+      <value>22uF</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>aa4cc881-c400-41af-bfb9-d3fd838f29fe</tstamps>
+    </comp>
+    <comp ref="D201">
+      <value>LED</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>34a6d8d8-c75a-4c5b-afb8-db9a58ae4a4e</tstamps>
+    </comp>
+    <comp ref="D202">
+      <value>D_Schottky</value>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>de32f76a-0d99-463a-9602-d198106301d1</tstamps>
+    </comp>
+    <comp ref="D203">
+      <value>D_Schottky</value>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>849bb9f3-410e-46d1-b494-d771dd436ded</tstamps>
+    </comp>
+    <comp ref="D204">
+      <value>LED</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>ae60ea2c-8d2d-476c-8d8f-ef85df27e16d</tstamps>
+    </comp>
+    <comp ref="D205">
+      <value>LED</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>f5ebbda2-ddf7-4462-92f1-2b50c5eb61b4</tstamps>
+    </comp>
+    <comp ref="D206">
+      <value>LED</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>6ed39c34-9ae5-4f73-847e-b8fb06fea155</tstamps>
+    </comp>
+    <comp ref="F201">
+      <value>2A</value>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>a53f90e7-a317-4330-a3a3-7ff9ee38d9f3</tstamps>
+    </comp>
+    <comp ref="J201">
+      <value>USB_C_Receptacle_PowerOnly_6P</value>
+      <footprint>Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <libsource lib="Connector" part="USB_C_Receptacle_PowerOnly_6P" description="USB Power-Only 6P Type-C Receptacle connector"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>93a0fb15-8bec-4d61-bdbf-3204db86081d</tstamps>
+    </comp>
+    <comp ref="L201">
+      <value>1uH</value>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>36a010bd-343f-4d4c-b38f-154a03e55e28</tstamps>
+    </comp>
+    <comp ref="L202">
+      <value>1uH</value>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>5db6e779-5eae-4b51-b6e0-aea49df118c4</tstamps>
+    </comp>
+    <comp ref="Q201">
+      <value>Q_PMOS_DSG</value>
+      <libsource lib="Device" part="Q_PMOS_DSG" description="P-MOSFET transistor, drain/source/gate"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>ea5c2066-5cc4-496d-958f-cb4687199c8d</tstamps>
+    </comp>
+    <comp ref="R201">
+      <value>5.1K</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>fe48bc85-7158-429c-a2bf-b01e95a4d4ad</tstamps>
+    </comp>
+    <comp ref="R202">
+      <value>2K</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>a02f7c06-af6a-4d55-93f2-a326a84b38b3</tstamps>
+    </comp>
+    <comp ref="R203">
+      <value>5.1K</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>ac4309f4-5360-4cd7-84bd-f62a7a029aea</tstamps>
+    </comp>
+    <comp ref="R204">
+      <value>470</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>af219dc7-5cc6-4243-8439-4e1bc3bade40</tstamps>
+    </comp>
+    <comp ref="R205">
+      <value>10K</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>4a3687fb-39e9-41e6-aa58-e38031fab32b</tstamps>
+    </comp>
+    <comp ref="R206">
+      <value>330k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>a026fd86-5daf-4edb-8ae7-13cfedcea95c</tstamps>
+    </comp>
+    <comp ref="R207">
+      <value>110k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>2d84c6e7-9cee-4a86-8cdc-4caf5401dd14</tstamps>
+    </comp>
+    <comp ref="R208">
+      <value>10k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>7b04a696-4b2f-402a-aa33-ec7f2ee9128f</tstamps>
+    </comp>
+    <comp ref="R209">
+      <value>1M</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>b72b2bb3-00cf-49e5-9dd6-b4d5cd71a2ce</tstamps>
+    </comp>
+    <comp ref="R210">
+      <value>470</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>7f81819f-84db-4e28-adee-45cde307de96</tstamps>
+    </comp>
+    <comp ref="R211">
+      <value>402k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>b372b774-e9ba-45f6-9c05-5b7462c8f8ee</tstamps>
+    </comp>
+    <comp ref="R212">
+      <value>100k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>12ca628a-d834-44e5-95c1-b6a10bd72acf</tstamps>
+    </comp>
+    <comp ref="R213">
+      <value>470</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>de1144ed-55a8-4871-8011-00ed1e504633</tstamps>
+    </comp>
+    <comp ref="R214">
+      <value>470</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>4973cacc-819c-4808-8e4e-396d9410b2c4</tstamps>
+    </comp>
+    <comp ref="R215">
+      <value>1M</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>e968127b-724f-43ab-8bdf-d67c1784db0a</tstamps>
+    </comp>
+    <comp ref="R216">
+      <value>402k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>da6dddde-e793-4dc0-b5d4-609508844ee6</tstamps>
+    </comp>
+    <comp ref="R217">
+      <value>100k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>e4add997-e783-45c6-adb4-080cc6423afe</tstamps>
+    </comp>
+    <comp ref="TH201">
+      <value>10K</value>
+      <libsource lib="Device" part="Thermistor" description="Temperature dependent resistor"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>c4501a1e-a59a-4aa9-8ecb-db121adfc595</tstamps>
+    </comp>
+    <comp ref="U201">
+      <value>MCP73831-2-OT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</datasheet>
+      <libsource lib="Battery_Management" part="MCP73831-2-OT" description="Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>bee86507-622a-420b-8fbe-3a24e3ab095e</tstamps>
+    </comp>
+    <comp ref="U202">
+      <value>MCP73871-1AA</value>
+      <footprint>Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm</footprint>
+      <datasheet>http://www.mouser.com/ds/2/268/22090a-52174.pdf</datasheet>
+      <libsource lib="Battery_Management" part="MCP73871-1AA" description="Single cell, Li-Ion/Li-Po charge management controller, 4.10V"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>06195736-4696-4a7a-8b42-b7e1c3d73b8c</tstamps>
+    </comp>
+    <comp ref="U203">
+      <value>TPS61230DRC</value>
+      <footprint>Package_SON:Texas_S-PVSON-N10_ThermalVias</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tps61232.pdf</datasheet>
+      <libsource lib="Regulator_Switching" part="TPS61230DRC" description="High Efficiency Synchronous Step Up Converters with 5-A Switches, 2.3-5.5V Input Voltage, VSON-10"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>230436b2-e334-4e1e-b2eb-cec2ef436dee</tstamps>
+    </comp>
+    <comp ref="U204">
+      <value>TPS61221DCK</value>
+      <footprint>Package_TO_SOT_SMD:Texas_R-PDSO-G6</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tps61220.pdf</datasheet>
+      <libsource lib="Regulator_Switching" part="TPS61221DCK" description="400 mA Step-Up Converter, Fixed 3.3V Output Voltage, 0.7-5.5V Input Voltage, SC-70"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>28313e1a-0d02-473d-b78e-99e27c9447d9</tstamps>
+    </comp>
+    <comp ref="U205">
+      <value>TPS61230DRC</value>
+      <footprint>Package_SON:Texas_S-PVSON-N10_ThermalVias</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tps61232.pdf</datasheet>
+      <libsource lib="Regulator_Switching" part="TPS61230DRC" description="High Efficiency Synchronous Step Up Converters with 5-A Switches, 2.3-5.5V Input Voltage, VSON-10"/>
+      <property name="Sheetname" value="Power &amp; Charging"/>
+      <property name="Sheetfile" value="Power &amp; Charging.kicad_sch"/>
+      <sheetpath names="/Power &amp; Charging/" tstamps="/968b581c-59b8-4e39-ae9d-82f589704db7/"/>
+      <tstamps>a6bdd78c-3c19-42d0-961f-466cd968cd9d</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Battery_Management" part="MCP73831-2-OT">
+      <description>Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831-2-OT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Battery_Management" part="MCP73871-1AA">
+      <description>Single cell, Li-Ion/Li-Po charge management controller, 4.10V</description>
+      <docs>http://www.mouser.com/ds/2/268/22090a-52174.pdf</docs>
+      <footprints>
+        <fp>QFN*4x4mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73871-1AA</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm</field>
+        <field name="Datasheet">http://www.mouser.com/ds/2/268/22090a-52174.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="VPCC" type="input"/>
+        <pin num="3" name="SEL" type="input"/>
+        <pin num="4" name="PROG2" type="input"/>
+        <pin num="5" name="THERM" type="bidirectional"/>
+        <pin num="6" name="~{PG}" type="open_collector"/>
+        <pin num="7" name="STAT2" type="open_collector"/>
+        <pin num="8" name="STAT1/~{LBO}" type="open_collector"/>
+        <pin num="9" name="~{TE}" type="input"/>
+        <pin num="10" name="VSS" type="power_in"/>
+        <pin num="11" name="VSS" type="passive"/>
+        <pin num="12" name="PROG3" type="bidirectional"/>
+        <pin num="13" name="PROG1" type="bidirectional"/>
+        <pin num="14" name="VBAT" type="power_out"/>
+        <pin num="15" name="VBAT" type="passive"/>
+        <pin num="16" name="Vbat_SENSE" type="input"/>
+        <pin num="17" name="CE" type="input"/>
+        <pin num="18" name="IN" type="power_in"/>
+        <pin num="19" name="IN" type="passive"/>
+        <pin num="20" name="OUT" type="passive"/>
+        <pin num="21" name="VSS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x01_Male">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="RJ45">
+      <description>RJ connector, 8P8C (8 positions 8 connected)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>8P8C*</fp>
+        <fp>RJ31*</fp>
+        <fp>RJ32*</fp>
+        <fp>RJ33*</fp>
+        <fp>RJ34*</fp>
+        <fp>RJ35*</fp>
+        <fp>RJ41*</fp>
+        <fp>RJ45*</fp>
+        <fp>RJ49*</fp>
+        <fp>RJ61*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RJ45</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+        <pin num="7" name="" type="passive"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_A">
+      <description>USB Type A connector</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_A</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="bidirectional"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_C_Receptacle_PowerOnly_6P">
+      <description>USB Power-Only 6P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle_PowerOnly_6P</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+      </fields>
+      <pins>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x20_Odd_Even">
+      <description>Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x20_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+        <pin num="31" name="Pin_31" type="passive"/>
+        <pin num="32" name="Pin_32" type="passive"/>
+        <pin num="33" name="Pin_33" type="passive"/>
+        <pin num="34" name="Pin_34" type="passive"/>
+        <pin num="35" name="Pin_35" type="passive"/>
+        <pin num="36" name="Pin_36" type="passive"/>
+        <pin num="37" name="Pin_37" type="passive"/>
+        <pin num="38" name="Pin_38" type="passive"/>
+        <pin num="39" name="Pin_39" type="passive"/>
+        <pin num="40" name="Pin_40" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_PMOS_DSG">
+      <description>P-MOSFET transistor, drain/source/gate</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_DSG</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="G" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Thermistor">
+      <description>Temperature dependent resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TH</field>
+        <field name="Value">Thermistor</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="TPS61221DCK">
+      <description>400 mA Step-Up Converter, Fixed 3.3V Output Voltage, 0.7-5.5V Input Voltage, SC-70</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tps61220.pdf</docs>
+      <footprints>
+        <fp>Texas*R*PDSO*G6*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61221DCK</field>
+        <field name="Footprint">Package_TO_SOT_SMD:Texas_R-PDSO-G6</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps61220.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="FB" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VOUT" type="power_out"/>
+        <pin num="5" name="L" type="power_in"/>
+        <pin num="6" name="EN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="TPS61230DRC">
+      <description>High Efficiency Synchronous Step Up Converters with 5-A Switches, 2.3-5.5V Input Voltage, VSON-10</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tps61232.pdf</docs>
+      <footprints>
+        <fp>Texas*S*PVSON*N10*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61230DRC</field>
+        <field name="Footprint">Package_SON:Texas_S-PVSON-N10_ThermalVias</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps61232.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="power_out"/>
+        <pin num="2" name="SW" type="passive"/>
+        <pin num="3" name="VOUT" type="power_out"/>
+        <pin num="4" name="VOUT" type="passive"/>
+        <pin num="5" name="PG" type="output"/>
+        <pin num="6" name="SS" type="input"/>
+        <pin num="7" name="FB" type="input"/>
+        <pin num="8" name="HYS" type="output"/>
+        <pin num="9" name="EN" type="input"/>
+        <pin num="10" name="VIN" type="power_in"/>
+        <pin num="11" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Battery_Management">
+      <uri>/usr/share/kicad/symbols//Battery_Management.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>/usr/share/kicad/symbols//Regulator_Switching.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V8">
+      <node ref="C210" pin="1" pintype="passive"/>
+      <node ref="C211" pin="1" pintype="passive"/>
+      <node ref="L202" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U202" pin="1" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U202" pin="20" pinfunction="OUT" pintype="passive"/>
+      <node ref="U205" pin="10" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U205" pin="9" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C201" pin="1" pintype="passive"/>
+      <node ref="D201" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D203" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="F201" pin="1" pintype="passive"/>
+      <node ref="J201" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J201" pin="B9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="Q201" pin="3" pinfunction="G" pintype="input"/>
+      <node ref="R205" pin="1" pintype="passive"/>
+      <node ref="R208" pin="1" pintype="passive"/>
+      <node ref="U201" pin="4" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U202" pin="17" pinfunction="CE" pintype="input"/>
+      <node ref="U202" pin="4" pinfunction="PROG2" pintype="input"/>
+    </net>
+    <net code="3" name="+BATT">
+      <node ref="C209" pin="1" pintype="passive"/>
+      <node ref="U202" pin="14" pinfunction="VBAT" pintype="power_out"/>
+      <node ref="U202" pin="15" pinfunction="VBAT" pintype="passive"/>
+      <node ref="U202" pin="16" pinfunction="Vbat_SENSE" pintype="input"/>
+    </net>
+    <net code="4" name="/Power &amp; Charging/5V_OUT">
+      <node ref="C206" pin="1" pintype="passive"/>
+      <node ref="C207" pin="1" pintype="passive"/>
+      <node ref="C208" pin="1" pintype="passive"/>
+      <node ref="C213" pin="1" pintype="passive"/>
+      <node ref="C214" pin="1" pintype="passive"/>
+      <node ref="C215" pin="1" pintype="passive"/>
+      <node ref="D203" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J101" pin="1" pinfunction="VBUS" pintype="power_in"/>
+      <node ref="J105" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R209" pin="2" pintype="passive"/>
+      <node ref="R211" pin="2" pintype="passive"/>
+      <node ref="R215" pin="2" pintype="passive"/>
+      <node ref="R216" pin="2" pintype="passive"/>
+      <node ref="U203" pin="3" pinfunction="VOUT" pintype="power_out"/>
+      <node ref="U203" pin="4" pinfunction="VOUT" pintype="passive"/>
+      <node ref="U205" pin="3" pinfunction="VOUT" pintype="power_out"/>
+      <node ref="U205" pin="4" pinfunction="VOUT" pintype="passive"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="BT201" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="C201" pin="2" pintype="passive"/>
+      <node ref="C202" pin="2" pintype="passive"/>
+      <node ref="C203" pin="2" pintype="passive"/>
+      <node ref="C204" pin="2" pintype="passive"/>
+      <node ref="C205" pin="2" pintype="passive"/>
+      <node ref="C206" pin="2" pintype="passive"/>
+      <node ref="C207" pin="2" pintype="passive"/>
+      <node ref="C208" pin="2" pintype="passive"/>
+      <node ref="C209" pin="2" pintype="passive"/>
+      <node ref="C210" pin="2" pintype="passive"/>
+      <node ref="C211" pin="2" pintype="passive"/>
+      <node ref="C212" pin="2" pintype="passive"/>
+      <node ref="C213" pin="2" pintype="passive"/>
+      <node ref="C214" pin="2" pintype="passive"/>
+      <node ref="C215" pin="2" pintype="passive"/>
+      <node ref="D202" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J101" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="J101" pin="5" pinfunction="Shield" pintype="passive"/>
+      <node ref="J104" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J201" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="J201" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="J201" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="R201" pin="2" pintype="passive"/>
+      <node ref="R202" pin="2" pintype="passive"/>
+      <node ref="R203" pin="2" pintype="passive"/>
+      <node ref="R205" pin="2" pintype="passive"/>
+      <node ref="R207" pin="2" pintype="passive"/>
+      <node ref="R208" pin="2" pintype="passive"/>
+      <node ref="R210" pin="2" pintype="passive"/>
+      <node ref="R212" pin="1" pintype="passive"/>
+      <node ref="R213" pin="2" pintype="passive"/>
+      <node ref="R214" pin="2" pintype="passive"/>
+      <node ref="R217" pin="1" pintype="passive"/>
+      <node ref="TH201" pin="2" pintype="passive"/>
+      <node ref="U201" pin="2" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U202" pin="10" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U202" pin="11" pinfunction="VSS" pintype="passive"/>
+      <node ref="U202" pin="21" pinfunction="VSS" pintype="passive"/>
+      <node ref="U202" pin="3" pinfunction="SEL" pintype="input"/>
+      <node ref="U202" pin="9" pinfunction="~{TE}" pintype="input"/>
+      <node ref="U203" pin="11" pinfunction="GND" pintype="power_in"/>
+      <node ref="U205" pin="11" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="6" name="Net-(BT201-Pad1)">
+      <node ref="BT201" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="C202" pin="1" pintype="passive"/>
+      <node ref="Q201" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="U201" pin="3" pinfunction="VBAT" pintype="power_out"/>
+    </net>
+    <net code="7" name="Net-(C203-Pad1)">
+      <node ref="C203" pin="1" pintype="passive"/>
+      <node ref="D202" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="F201" pin="2" pintype="passive"/>
+      <node ref="R206" pin="1" pintype="passive"/>
+      <node ref="U202" pin="18" pinfunction="IN" pintype="power_in"/>
+      <node ref="U202" pin="19" pinfunction="IN" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(C204-Pad1)">
+      <node ref="C204" pin="1" pintype="passive"/>
+      <node ref="L201" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="Q201" pin="1" pinfunction="D" pintype="passive"/>
+      <node ref="U203" pin="10" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U203" pin="9" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="9" name="Net-(C205-Pad1)">
+      <node ref="C205" pin="1" pintype="passive"/>
+      <node ref="U203" pin="6" pinfunction="SS" pintype="input"/>
+    </net>
+    <net code="10" name="Net-(C212-Pad1)">
+      <node ref="C212" pin="1" pintype="passive"/>
+      <node ref="U205" pin="6" pinfunction="SS" pintype="input"/>
+    </net>
+    <net code="11" name="Net-(D201-Pad1)">
+      <node ref="D201" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R204" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(D204-Pad1)">
+      <node ref="D204" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R210" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(D204-Pad2)">
+      <node ref="D204" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U202" pin="7" pinfunction="STAT2" pintype="open_collector"/>
+    </net>
+    <net code="14" name="Net-(D205-Pad1)">
+      <node ref="D205" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R213" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(D205-Pad2)">
+      <node ref="D205" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U202" pin="8" pinfunction="STAT1/~{LBO}" pintype="open_collector"/>
+    </net>
+    <net code="16" name="Net-(D206-Pad1)">
+      <node ref="D206" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R214" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(D206-Pad2)">
+      <node ref="D206" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U202" pin="6" pinfunction="~{PG}" pintype="open_collector"/>
+    </net>
+    <net code="18" name="Net-(J201-PadA5)">
+      <node ref="J201" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
+      <node ref="R203" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(J201-PadB5)">
+      <node ref="J201" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="R201" pin="1" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(L201-Pad2)">
+      <node ref="L201" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U203" pin="1" pinfunction="SW" pintype="power_out"/>
+      <node ref="U203" pin="2" pinfunction="SW" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(L202-Pad2)">
+      <node ref="L202" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U205" pin="1" pinfunction="SW" pintype="power_out"/>
+      <node ref="U205" pin="2" pinfunction="SW" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(R202-Pad1)">
+      <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="U201" pin="5" pinfunction="PROG" pintype="input"/>
+    </net>
+    <net code="23" name="Net-(R204-Pad1)">
+      <node ref="R204" pin="1" pintype="passive"/>
+      <node ref="U201" pin="1" pinfunction="STAT" pintype="output"/>
+    </net>
+    <net code="24" name="Net-(R206-Pad2)">
+      <node ref="R206" pin="2" pintype="passive"/>
+      <node ref="R207" pin="1" pintype="passive"/>
+      <node ref="U202" pin="2" pinfunction="VPCC" pintype="input"/>
+    </net>
+    <net code="25" name="Net-(R209-Pad1)">
+      <node ref="R209" pin="1" pintype="passive"/>
+      <node ref="U203" pin="5" pinfunction="PG" pintype="output"/>
+    </net>
+    <net code="26" name="Net-(R211-Pad1)">
+      <node ref="R211" pin="1" pintype="passive"/>
+      <node ref="R212" pin="2" pintype="passive"/>
+      <node ref="U203" pin="7" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="27" name="Net-(R215-Pad1)">
+      <node ref="R215" pin="1" pintype="passive"/>
+      <node ref="U205" pin="5" pinfunction="PG" pintype="output"/>
+    </net>
+    <net code="28" name="Net-(R216-Pad1)">
+      <node ref="R216" pin="1" pintype="passive"/>
+      <node ref="R217" pin="2" pintype="passive"/>
+      <node ref="U205" pin="7" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="29" name="THERM">
+      <node ref="TH201" pin="1" pintype="passive"/>
+      <node ref="U202" pin="5" pinfunction="THERM" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="unconnected-(J101-Pad2)">
+      <node ref="J101" pin="2" pinfunction="D-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(J101-Pad3)">
+      <node ref="J101" pin="3" pinfunction="D+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(J102-Pad1)">
+      <node ref="J102" pin="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(J102-Pad2)">
+      <node ref="J102" pin="2" pintype="passive+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(J102-Pad3)">
+      <node ref="J102" pin="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(J102-Pad4)">
+      <node ref="J102" pin="4" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(J102-Pad5)">
+      <node ref="J102" pin="5" pintype="passive+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(J102-Pad6)">
+      <node ref="J102" pin="6" pintype="passive+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(J102-Pad7)">
+      <node ref="J102" pin="7" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(J102-Pad8)">
+      <node ref="J102" pin="8" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(J103-Pad1)">
+      <node ref="J103" pin="1" pinfunction="Pin_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(J103-Pad2)">
+      <node ref="J103" pin="2" pinfunction="Pin_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(J103-Pad3)">
+      <node ref="J103" pin="3" pinfunction="Pin_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(J103-Pad4)">
+      <node ref="J103" pin="4" pinfunction="Pin_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(J103-Pad5)">
+      <node ref="J103" pin="5" pinfunction="Pin_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(J103-Pad6)">
+      <node ref="J103" pin="6" pinfunction="Pin_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(J103-Pad7)">
+      <node ref="J103" pin="7" pinfunction="Pin_7" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(J103-Pad8)">
+      <node ref="J103" pin="8" pinfunction="Pin_8" pintype="passive+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(J103-Pad9)">
+      <node ref="J103" pin="9" pinfunction="Pin_9" pintype="passive+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(J103-Pad10)">
+      <node ref="J103" pin="10" pinfunction="Pin_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(J103-Pad11)">
+      <node ref="J103" pin="11" pinfunction="Pin_11" pintype="passive+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(J103-Pad12)">
+      <node ref="J103" pin="12" pinfunction="Pin_12" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(J103-Pad13)">
+      <node ref="J103" pin="13" pinfunction="Pin_13" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(J103-Pad14)">
+      <node ref="J103" pin="14" pinfunction="Pin_14" pintype="passive+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(J103-Pad15)">
+      <node ref="J103" pin="15" pinfunction="Pin_15" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(J103-Pad16)">
+      <node ref="J103" pin="16" pinfunction="Pin_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(J103-Pad17)">
+      <node ref="J103" pin="17" pinfunction="Pin_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(J103-Pad18)">
+      <node ref="J103" pin="18" pinfunction="Pin_18" pintype="passive+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(J103-Pad19)">
+      <node ref="J103" pin="19" pinfunction="Pin_19" pintype="passive+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(J103-Pad20)">
+      <node ref="J103" pin="20" pinfunction="Pin_20" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(J103-Pad21)">
+      <node ref="J103" pin="21" pinfunction="Pin_21" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(J103-Pad22)">
+      <node ref="J103" pin="22" pinfunction="Pin_22" pintype="passive+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(J103-Pad23)">
+      <node ref="J103" pin="23" pinfunction="Pin_23" pintype="passive+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(J103-Pad24)">
+      <node ref="J103" pin="24" pinfunction="Pin_24" pintype="passive+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(J103-Pad25)">
+      <node ref="J103" pin="25" pinfunction="Pin_25" pintype="passive+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(J103-Pad26)">
+      <node ref="J103" pin="26" pinfunction="Pin_26" pintype="passive+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(J103-Pad27)">
+      <node ref="J103" pin="27" pinfunction="Pin_27" pintype="passive+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(J103-Pad28)">
+      <node ref="J103" pin="28" pinfunction="Pin_28" pintype="passive+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(J103-Pad29)">
+      <node ref="J103" pin="29" pinfunction="Pin_29" pintype="passive+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(J103-Pad30)">
+      <node ref="J103" pin="30" pinfunction="Pin_30" pintype="passive+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(J103-Pad31)">
+      <node ref="J103" pin="31" pinfunction="Pin_31" pintype="passive+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(J103-Pad32)">
+      <node ref="J103" pin="32" pinfunction="Pin_32" pintype="passive+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(J103-Pad33)">
+      <node ref="J103" pin="33" pinfunction="Pin_33" pintype="passive+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(J103-Pad34)">
+      <node ref="J103" pin="34" pinfunction="Pin_34" pintype="passive+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(J103-Pad35)">
+      <node ref="J103" pin="35" pinfunction="Pin_35" pintype="passive+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(J103-Pad36)">
+      <node ref="J103" pin="36" pinfunction="Pin_36" pintype="passive+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(J103-Pad37)">
+      <node ref="J103" pin="37" pinfunction="Pin_37" pintype="passive+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(J103-Pad38)">
+      <node ref="J103" pin="38" pinfunction="Pin_38" pintype="passive+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(J103-Pad39)">
+      <node ref="J103" pin="39" pinfunction="Pin_39" pintype="passive+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(J103-Pad40)">
+      <node ref="J103" pin="40" pinfunction="Pin_40" pintype="passive+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(J106-Pad1)">
+      <node ref="J106" pin="1" pinfunction="Pin_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(J107-Pad1)">
+      <node ref="J107" pin="1" pinfunction="Pin_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U202-Pad12)">
+      <node ref="U202" pin="12" pinfunction="PROG3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(U202-Pad13)">
+      <node ref="U202" pin="13" pinfunction="PROG1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(U203-Pad8)">
+      <node ref="U203" pin="8" pinfunction="HYS" pintype="output+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U204-Pad1)">
+      <node ref="U204" pin="1" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="86" name="unconnected-(U204-Pad2)">
+      <node ref="U204" pin="2" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="87" name="unconnected-(U204-Pad3)">
+      <node ref="U204" pin="3" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="88" name="unconnected-(U204-Pad4)">
+      <node ref="U204" pin="4" pinfunction="VOUT" pintype="power_out"/>
+    </net>
+    <net code="89" name="unconnected-(U204-Pad5)">
+      <node ref="U204" pin="5" pinfunction="L" pintype="power_in"/>
+    </net>
+    <net code="90" name="unconnected-(U204-Pad6)">
+      <node ref="U204" pin="6" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="91" name="unconnected-(U205-Pad8)">
+      <node ref="U205" pin="8" pinfunction="HYS" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>
