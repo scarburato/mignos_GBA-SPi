@@ -13,7 +13,7 @@ void setup() {
   
   // Setup pin 13 as output and turn LED off
   pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(ledPin, HIGH);
 }
  
 // Function that executes whenever data is received from master

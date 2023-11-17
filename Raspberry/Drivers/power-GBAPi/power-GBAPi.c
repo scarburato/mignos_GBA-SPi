@@ -129,7 +129,7 @@ static struct i2c_board_info power_GBAPi_i2c_board_info = {
 
 static void power_GBAPi_poweroff_do_poweroff(void)
 {
-    power_GBAPi_Write(true);
+    power_GBAPi_Write(false);
     mdelay(100);
 }
 
@@ -167,7 +167,7 @@ static int __init etx_driver_init(void)
 	// }
 
     pm_power_off = &power_GBAPi_poweroff_do_poweroff;
-    power_GBAPi_Write(false);
+    power_GBAPi_Write(true);
     return ret;
 }
 
