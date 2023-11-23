@@ -1,13 +1,3 @@
-/***************************************************************************//**
-*  \file       driver.c
-*
-*  \details    Simple I2C driver explanation (SSD_1306 OLED Display Interface)
-*
-*  \author     EmbeTronicX
-*
-*  \Tested with Linux raspberrypi 5.4.51-v7l+
-*
-* *******************************************************************************/
 #include <linux/module.h>
 #include <linux/init.h>
 #include <linux/slab.h>
