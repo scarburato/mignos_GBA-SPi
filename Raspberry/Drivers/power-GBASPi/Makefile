@@ -1,4 +1,4 @@
-obj-m += power-GBAPi.o
+obj-m += power-GBASPi.o
 KDIR ?= /lib/modules/$(shell uname -r)/build
 
 all:

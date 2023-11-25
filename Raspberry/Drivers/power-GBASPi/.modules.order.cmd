@@ -1,0 +1,1 @@
+cmd_/home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/modules.order := {   echo /home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/power-GBASPi.ko; :; } > /home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/modules.order
