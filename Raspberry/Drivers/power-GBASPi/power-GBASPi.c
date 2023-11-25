@@ -1,4 +1,5 @@
 #include <linux/module.h>
+#include <linux/reboot.h>
 #include <linux/init.h>
 #include <linux/slab.h>
 #include <linux/i2c.h>
@@ -12,7 +13,7 @@
 
 static struct i2c_adapter *etx_i2c_adapter = NULL;           // I2C Adapter Structure
 static struct i2c_client *etx_i2c_client_power_GBASPi = NULL; // I2C Cient Structure (In our case it is OLED)
-void *tmp_pm_power_off = NULL;
+// void *tmp_pm_power_off = NULL;
 //  Writes data into the I2C client
 //   Arguments:
 //       buff -> buffer to be sent
@@ -43,13 +44,13 @@ static void power_GBASPi_Write(bool led)
 }
 
 // poweroff handler
-static void power_GBASPi_poweroff_do_poweroff(void)
+static int power_GBASPi_poweroff_do_poweroff(struct sys_off_data *data)
 {
     // blinking the LED for testing
     power_GBASPi_Write(false);
     mdelay(200);
-    pm_power_off = tmp_pm_power_off;
-    return;
+    // pm_power_off = tmp_pm_power_off;
+    return 0;
 }
 
 // This function getting called when the slave has been found
@@ -124,11 +125,12 @@ static int __init etx_driver_init(void)
 
     pr_info("Driver Added!!!\n");
     
-    if (pm_power_off != NULL) {
-        tmp_pm_power_off = &(*pm_power_off); 
-    }
+    // if (pm_power_off != NULL) {
+    //     tmp_pm_power_off = &(*pm_power_off); 
+    // }
 
-    pm_power_off = &power_GBASPi_poweroff_do_poweroff;
+    // pm_power_off = &power_GBASPi_poweroff_do_poweroff;
+    register_sys_off_handler(SYS_OFF_MODE_POWER_OFF_PREPARE,0,power_GBASPi_poweroff_do_poweroff,NULL);
     power_GBASPi_Write(true);
     return ret;
 }
@@ -138,8 +140,8 @@ static void __exit etx_driver_exit(void)
 {
     i2c_unregister_device(etx_i2c_client_power_GBASPi);
     i2c_del_driver(&etx_power_GBASPi_driver);
-    if (pm_power_off == &power_GBASPi_poweroff_do_poweroff)
-        pm_power_off = tmp_pm_power_off;
+    // if (pm_power_off == &power_GBASPi_poweroff_do_poweroff)
+    //     pm_power_off = tmp_pm_power_off;
 
     power_GBASPi_Write(false);
     pr_info("Driver Removed!!!\n");
