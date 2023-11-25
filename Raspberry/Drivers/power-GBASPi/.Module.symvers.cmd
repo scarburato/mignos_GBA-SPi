@@ -1,1 +1,0 @@
-cmd_/home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/Module.symvers :=  sed 's/ko$$/o/'  /home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/modules.order | scripts/mod/modpost -m -a    -o /home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/Module.symvers -e -i Module.symvers -T - 

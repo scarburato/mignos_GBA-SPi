@@ -142,7 +142,6 @@ static void __exit etx_driver_exit(void)
         pm_power_off = tmp_pm_power_off;
 
     power_GBASPi_Write(false);
-
     pr_info("Driver Removed!!!\n");
 }
 

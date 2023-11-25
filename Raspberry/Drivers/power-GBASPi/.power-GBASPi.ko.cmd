@@ -1,1 +1,0 @@
-cmd_/home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/power-GBASPi.ko := ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/power-GBASPi.ko /home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/power-GBASPi.o /home/chuck/GBA-SPi/Raspberry/Drivers/power-GBASPi/power-GBASPi.mod.o;  true
