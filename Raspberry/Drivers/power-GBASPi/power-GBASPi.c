@@ -1,10 +1,10 @@
 #include <linux/module.h>
 #include <linux/reboot.h>
+#include <linux/kernel.h>
+#include <linux/i2c.h>
 #include <linux/init.h>
 #include <linux/slab.h>
-#include <linux/i2c.h>
 #include <linux/delay.h>
-#include <linux/kernel.h>
 #include <linux/pm.h>
 
 #define I2C_BUS_AVAILABLE (1)              // I2C Bus available in our Raspberry Pi
@@ -13,7 +13,8 @@
 
 static struct i2c_adapter *etx_i2c_adapter = NULL;           // I2C Adapter Structure
 static struct i2c_client *etx_i2c_client_power_GBASPi = NULL; // I2C Cient Structure (In our case it is OLED)
-// void *tmp_pm_power_off = NULL;
+static struct sys_off_handler *poweroff_handler = NULL;
+
 //  Writes data into the I2C client
 //   Arguments:
 //       buff -> buffer to be sent
@@ -47,9 +48,8 @@ static void power_GBASPi_Write(bool led)
 static int power_GBASPi_poweroff_do_poweroff(struct sys_off_data *data)
 {
     // blinking the LED for testing
-    power_GBASPi_Write(false);
+    power_GBASPi_Write(0);
     mdelay(200);
-    // pm_power_off = tmp_pm_power_off;
     return 0;
 }
 
@@ -124,13 +124,8 @@ static int __init etx_driver_init(void)
     i2c_put_adapter(etx_i2c_adapter);
 
     pr_info("Driver Added!!!\n");
-    
-    // if (pm_power_off != NULL) {
-    //     tmp_pm_power_off = &(*pm_power_off); 
-    // }
 
-    // pm_power_off = &power_GBASPi_poweroff_do_poweroff;
-    register_sys_off_handler(SYS_OFF_MODE_POWER_OFF_PREPARE,0,power_GBASPi_poweroff_do_poweroff,NULL);
+    poweroff_handler = register_sys_off_handler(SYS_OFF_MODE_POWER_OFF_PREPARE,0,power_GBASPi_poweroff_do_poweroff,NULL);
     power_GBASPi_Write(true);
     return ret;
 }
@@ -140,9 +135,9 @@ static void __exit etx_driver_exit(void)
 {
     i2c_unregister_device(etx_i2c_client_power_GBASPi);
     i2c_del_driver(&etx_power_GBASPi_driver);
-    // if (pm_power_off == &power_GBASPi_poweroff_do_poweroff)
-    //     pm_power_off = tmp_pm_power_off;
 
+    unregister_sys_off_handler(poweroff_handler);
+    
     power_GBASPi_Write(false);
     pr_info("Driver Removed!!!\n");
 }
