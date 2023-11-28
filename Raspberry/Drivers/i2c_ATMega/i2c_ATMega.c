@@ -8,11 +8,11 @@
 #include <linux/pm.h>
 
 #define I2C_BUS_AVAILABLE (1)              // I2C Bus available in our Raspberry Pi
-#define SLAVE_DEVICE_NAME ("power-GBASPi") // Device and Driver Name
-#define power_GBASPi_SLAVE_ADDR (0x8)       // ATMEGA Slave Address
+#define SLAVE_DEVICE_NAME ("ATMega") // Device and Driver Name
+#define ATMega_GBASPi_SLAVE_ADDR (0x8)       // ATMEGA Slave Address
 
 static struct i2c_adapter *etx_i2c_adapter = NULL;           // I2C Adapter Structure
-static struct i2c_client *etx_i2c_client_power_GBASPi = NULL; // I2C Cient Structure (In our case it is OLED)
+static struct i2c_client *etx_i2c_client_ATMega_GBASPi = NULL; // I2C Cient Structure (In our case it is OLED)
 static struct sys_off_handler *poweroff_handler = NULL;
 
 //  Writes data into the I2C client
@@ -21,7 +21,7 @@ static struct sys_off_handler *poweroff_handler = NULL;
 //       len  -> Length of the data
 static int I2C_Write(unsigned char *buf, unsigned int len)
 {
-    return i2c_master_send(etx_i2c_client_power_GBASPi, buf, len);
+    return i2c_master_send(etx_i2c_client_ATMega_GBASPi, buf, len);
 }
 
 // Reads one byte of data from the I2C client
@@ -30,10 +30,10 @@ static int I2C_Write(unsigned char *buf, unsigned int len)
 //      len      -> Length of the data to be read
 static int I2C_Read(unsigned char *out_buf, unsigned int len)
 {
-    return i2c_master_recv(etx_i2c_client_power_GBASPi, out_buf, len);
+    return i2c_master_recv(etx_i2c_client_ATMega_GBASPi, out_buf, len);
 }
 
-static void power_GBASPi_Write(bool led)
+static void ATMega_GBASPi_Write(bool led)
 {
     unsigned char buff; 
     if (led) { 
@@ -45,17 +45,17 @@ static void power_GBASPi_Write(bool led)
 }
 
 // poweroff handler
-static int power_GBASPi_poweroff_do_poweroff(struct sys_off_data *data)
+static int ATMega_GBASPi_poweroff(struct sys_off_data *data)
 {
     // blinking the LED for testing
-    power_GBASPi_Write(0);
+    ATMega_GBASPi_Write(0);
     mdelay(200);
     return 0;
 }
 
 // This function getting called when the slave has been found
 // This will be called only once when we load the driver.
-static int power_GBASPi_probe(struct i2c_client *client,
+static int ATMega_GBASPi_probe(struct i2c_client *client,
                                  const struct i2c_device_id *id)
 {
     pr_info("ATMEGA Probed!!!\n");
@@ -64,7 +64,7 @@ static int power_GBASPi_probe(struct i2c_client *client,
 
 // This function getting called when the slave has been removed
 // This will be called only once when we unload the driver.
-static void power_GBASPi_remove(struct i2c_client *client)
+static void ATMega_GBASPi_remove(struct i2c_client *client)
 {
 
     pr_info("ATMEGA Removed!!!\n");
@@ -72,27 +72,27 @@ static void power_GBASPi_remove(struct i2c_client *client)
 
 
 // Structure that has slave device id
-static const struct i2c_device_id power_GBASPi_id[] = {
+static const struct i2c_device_id ATMega_GBASPi_id[] = {
     {SLAVE_DEVICE_NAME, 0},
     { },
 };
-MODULE_DEVICE_TABLE(i2c, power_GBASPi_id);
+MODULE_DEVICE_TABLE(i2c, ATMega_GBASPi_id);
 
 
 // I2C driver Structure that has to be added to linux
-static struct i2c_driver etx_power_GBASPi_driver = {
+static struct i2c_driver etx_ATMega_GBASPi_driver = {
     .driver = {
         .name = SLAVE_DEVICE_NAME,
         .owner = THIS_MODULE,
     },
-    .probe = power_GBASPi_probe,
-    .remove = power_GBASPi_remove,
-    .id_table = power_GBASPi_id
+    .probe = ATMega_GBASPi_probe,
+    .remove = ATMega_GBASPi_remove,
+    .id_table = ATMega_GBASPi_id
 };
 
 // I2C Board Info strucutre
-static struct i2c_board_info power_GBASPi_i2c_board_info = {
-    I2C_BOARD_INFO(SLAVE_DEVICE_NAME, power_GBASPi_SLAVE_ADDR)
+static struct i2c_board_info ATMega_GBASPi_i2c_board_info = {
+    I2C_BOARD_INFO(SLAVE_DEVICE_NAME, ATMega_GBASPi_SLAVE_ADDR)
 };
 
 
@@ -108,11 +108,11 @@ static int __init etx_driver_init(void)
         return -ENODEV;
     }
 
-    etx_i2c_client_power_GBASPi = i2c_new_client_device(etx_i2c_adapter, &power_GBASPi_i2c_board_info);
+    etx_i2c_client_ATMega_GBASPi = i2c_new_client_device(etx_i2c_adapter, &ATMega_GBASPi_i2c_board_info);
 
-    if (etx_i2c_client_power_GBASPi != NULL)
+    if (etx_i2c_client_ATMega_GBASPi != NULL)
     {
-        i2c_add_driver(&etx_power_GBASPi_driver);
+        i2c_add_driver(&etx_ATMega_GBASPi_driver);
         ret = 0;
     }
     else
@@ -120,32 +120,32 @@ static int __init etx_driver_init(void)
         printk(KERN_ERR "Unable to init device\n");
         return -ENODEV;
     }
-
+    
     i2c_put_adapter(etx_i2c_adapter);
 
     pr_info("Driver Added!!!\n");
 
-    poweroff_handler = register_sys_off_handler(SYS_OFF_MODE_POWER_OFF_PREPARE,0,power_GBASPi_poweroff_do_poweroff,NULL);
-    power_GBASPi_Write(true);
+    poweroff_handler = register_sys_off_handler(SYS_OFF_MODE_POWER_OFF_PREPARE,0,ATMega_GBASPi_poweroff,NULL);
+    ATMega_GBASPi_Write(true);
     return ret;
 }
 
 // Module Exit function
 static void __exit etx_driver_exit(void)
 {
-    i2c_unregister_device(etx_i2c_client_power_GBASPi);
-    i2c_del_driver(&etx_power_GBASPi_driver);
+    i2c_unregister_device(etx_i2c_client_ATMega_GBASPi);
+    i2c_del_driver(&etx_ATMega_GBASPi_driver);
 
     unregister_sys_off_handler(poweroff_handler);
     
-    power_GBASPi_Write(false);
+    ATMega_GBASPi_Write(false);
     pr_info("Driver Removed!!!\n");
 }
 
 module_init(etx_driver_init);
 module_exit(etx_driver_exit);
 
-// module_i2c_driver(etx_power_GBASPi_driver);
+// module_i2c_driver(etx_ATMega_GBASPi_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("GBASPi <GBASPi@free.me>");
