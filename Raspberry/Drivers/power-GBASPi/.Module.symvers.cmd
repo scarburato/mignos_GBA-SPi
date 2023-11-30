@@ -1,0 +1,1 @@
+savedcmd_/home/chuck/repos/projects/GBA-SPi/Raspberry/Drivers/power-GBASPi/Module.symvers :=  scripts/mod/modpost        -o /home/chuck/repos/projects/GBA-SPi/Raspberry/Drivers/power-GBASPi/Module.symvers -n -T /home/chuck/repos/projects/GBA-SPi/Raspberry/Drivers/power-GBASPi/modules.order -i Module.symvers -e 
