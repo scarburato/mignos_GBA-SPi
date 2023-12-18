@@ -149,5 +149,5 @@ module_exit(etx_driver_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("GBASPi <GBASPi@free.me>");
-MODULE_DESCRIPTION("GBASPi power handler");
+MODULE_DESCRIPTION("GBASPi power & button handler");
 MODULE_VERSION("0.1");
