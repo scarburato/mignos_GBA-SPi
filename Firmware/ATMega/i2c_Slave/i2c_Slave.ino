@@ -14,9 +14,11 @@ const unsigned JOY_BUTTONS_PINS[] = {
   4, // DHAT DOWN
   5, // DHAT LEFT
   6, // DHAT RIGHT
+  7, // SHOULDER LEFT
+  8  // SHOULDER RIGHT
 };
 
-const size_t JOY_BUTTONS_PINS_LEN = 6;
+const size_t JOY_BUTTONS_PINS_LEN = 8;
 
 unsigned long press_time = 0;
  
@@ -57,7 +59,7 @@ void receiveEvent(int howMany) {
 }
 
 void requestEvent() {
-  uint8_t packet;
+  uint16_t packet;
   unsigned mask = 0b10;
 
   packet = digitalRead(PWR_BUTTON_PIN) == LOW ? 1 : 0;
@@ -65,7 +67,7 @@ void requestEvent() {
   for(size_t i = 0; i < JOY_BUTTONS_PINS_LEN; ++i, mask <<= 1)
     packet |= digitalRead(JOY_BUTTONS_PINS[i]) == LOW ? mask : 0;
   
-  Wire.write(packet);
+  Wire.write((char*)&packet, sizeof(uint16_t));
 }
 
 void loop() {
