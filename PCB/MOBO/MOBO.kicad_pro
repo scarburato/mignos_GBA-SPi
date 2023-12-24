@@ -342,16 +342,8 @@
       "Power & Charging"
     ],
     [
-      "59c7985f-016b-47ed-87ab-98a7dfa9c79d",
-      "USB Controller"
-    ],
-    [
-      "e586924b-229a-43da-a1a4-83bd78718623",
-      "USB LAN Controller"
-    ],
-    [
       "7ca0e1b4-2467-452a-8d82-c598e33fab6f",
-      "Joystick"
+      "ATMega & Buttons"
     ]
   ],
   "text_variables": {}
