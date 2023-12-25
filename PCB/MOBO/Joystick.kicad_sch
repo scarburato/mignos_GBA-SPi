@@ -819,7 +819,7 @@
   (symbol (lib_id "Device:C") (at 92.71 64.77 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 01e7a029-cd1c-4f8e-b576-871c6df0aa24)
-    (property "Reference" "C5" (at 92.71 72.39 90)
+    (property "Reference" "C303" (at 92.71 72.39 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22pF" (at 92.71 69.85 90)
@@ -836,7 +836,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "C5") (unit 1)
+          (reference "C303") (unit 1)
         )
       )
     )
@@ -845,7 +845,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 238.76 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0463497a-5460-4e71-b2bc-2131196a820a)
-    (property "Reference" "SW4" (at 238.76 34.29 0)
+    (property "Reference" "SW307" (at 238.76 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "A Button" (at 238.76 36.83 0)
@@ -862,7 +862,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW4") (unit 1)
+          (reference "SW307") (unit 1)
         )
       )
     )
@@ -871,7 +871,7 @@
   (symbol (lib_id "power:GND") (at 243.84 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0d391bcf-aab0-4f14-8789-473dfb0b2e5f)
-    (property "Reference" "#PWR026" (at 243.84 59.69 0)
+    (property "Reference" "#PWR0310" (at 243.84 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 58.42 0)
@@ -887,7 +887,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR0310") (unit 1)
         )
       )
     )
@@ -896,7 +896,7 @@
   (symbol (lib_id "power:GND") (at 220.98 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1f85740e-1f00-4eb2-bad7-e04468769c05)
-    (property "Reference" "#PWR019" (at 220.98 88.9 0)
+    (property "Reference" "#PWR0307" (at 220.98 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 220.98 87.63 0)
@@ -912,7 +912,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR0307") (unit 1)
         )
       )
     )
@@ -921,7 +921,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 199.39 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 212c38b4-989b-4eda-98ca-a85188d1119d)
-    (property "Reference" "SW5" (at 199.39 19.05 0)
+    (property "Reference" "SW301" (at 199.39 19.05 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RS Button" (at 199.39 21.59 0)
@@ -938,7 +938,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW5") (unit 1)
+          (reference "SW301") (unit 1)
         )
       )
     )
@@ -947,7 +947,7 @@
   (symbol (lib_id "power:GND") (at 35.56 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2a978c08-8fa1-45de-9ec3-033b30595e74)
-    (property "Reference" "#PWR018" (at 35.56 119.38 0)
+    (property "Reference" "#PWR0301" (at 35.56 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 35.56 118.11 0)
@@ -963,7 +963,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR0301") (unit 1)
         )
       )
     )
@@ -972,7 +972,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 238.76 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 354c35cb-452c-4706-8c74-56f7311b2ebc)
-    (property "Reference" "SW9" (at 238.76 45.72 0)
+    (property "Reference" "SW308" (at 238.76 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DPAD Down" (at 238.76 48.26 0)
@@ -989,7 +989,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW9") (unit 1)
+          (reference "SW308") (unit 1)
         )
       )
     )
@@ -998,7 +998,7 @@
   (symbol (lib_id "power:GND") (at 100.33 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3b8f368e-25d8-461c-82a3-a818a1dfca90)
-    (property "Reference" "#PWR017" (at 106.68 60.96 0)
+    (property "Reference" "#PWR0302" (at 106.68 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 104.14 60.96 90)
@@ -1014,7 +1014,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR0302") (unit 1)
         )
       )
     )
@@ -1042,7 +1042,7 @@
           (reference "J107") (unit 1)
         )
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "J3") (unit 1)
+          (reference "J301") (unit 1)
         )
       )
     )
@@ -1051,7 +1051,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 215.9 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 406f1ff7-e623-4ece-b86e-89fd5b170a09)
-    (property "Reference" "SW2" (at 215.9 74.93 0)
+    (property "Reference" "SW305" (at 215.9 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Reset_Button" (at 215.9 77.47 0)
@@ -1068,7 +1068,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW2") (unit 1)
+          (reference "SW305") (unit 1)
         )
       )
     )
@@ -1077,7 +1077,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 199.39 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 467c9635-28c5-4f62-835d-5ce35cf22f27)
-    (property "Reference" "SW8" (at 199.39 59.69 0)
+    (property "Reference" "SW304" (at 199.39 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DPAD Left" (at 199.39 62.23 0)
@@ -1094,7 +1094,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW8") (unit 1)
+          (reference "SW304") (unit 1)
         )
       )
     )
@@ -1103,7 +1103,7 @@
   (symbol (lib_id "Device:C") (at 92.71 57.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4c8d021c-6cc2-44cb-ba7e-04cf70cf35ef)
-    (property "Reference" "C4" (at 92.71 49.53 90)
+    (property "Reference" "C302" (at 92.71 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22pF" (at 92.71 52.07 90)
@@ -1120,7 +1120,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "C4") (unit 1)
+          (reference "C302") (unit 1)
         )
       )
     )
@@ -1129,7 +1129,7 @@
   (symbol (lib_id "power:GND") (at 243.84 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 528e6985-e3a0-49ac-9686-1b4dc65f62c6)
-    (property "Reference" "#PWR021" (at 243.84 46.99 0)
+    (property "Reference" "#PWR0309" (at 243.84 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 45.72 0)
@@ -1145,7 +1145,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR0309") (unit 1)
         )
       )
     )
@@ -1154,7 +1154,7 @@
   (symbol (lib_id "Device:Crystal") (at 78.74 60.96 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 564f4711-c31d-45f3-9f4b-586889d26f81)
-    (property "Reference" "Y1" (at 82.55 59.69 90)
+    (property "Reference" "Y301" (at 82.55 59.69 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "116MHz" (at 82.55 62.23 90)
@@ -1171,7 +1171,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "Y1") (unit 1)
+          (reference "Y301") (unit 1)
         )
       )
     )
@@ -1199,7 +1199,7 @@
           (reference "J107") (unit 1)
         )
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "J6") (unit 1)
+          (reference "J306") (unit 1)
         )
       )
     )
@@ -1208,7 +1208,7 @@
   (symbol (lib_id "power:GND") (at 204.47 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6a13d29c-39d0-472c-890c-83d6e2e76a89)
-    (property "Reference" "#PWR024" (at 204.47 58.42 0)
+    (property "Reference" "#PWR0305" (at 204.47 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 57.15 0)
@@ -1224,7 +1224,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR0305") (unit 1)
         )
       )
     )
@@ -1233,7 +1233,7 @@
   (symbol (lib_id "power:GND") (at 243.84 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7278f479-a879-49d5-8644-b09ec69ced34)
-    (property "Reference" "#PWR027" (at 243.84 73.66 0)
+    (property "Reference" "#PWR0311" (at 243.84 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 72.39 0)
@@ -1249,7 +1249,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR0311") (unit 1)
         )
       )
     )
@@ -1258,7 +1258,7 @@
   (symbol (lib_id "Device:R") (at 72.39 82.55 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 74264ac2-c1f5-4163-821a-e1a1bc477b1c)
-    (property "Reference" "R15" (at 72.39 87.63 90)
+    (property "Reference" "R301" (at 72.39 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 72.39 85.09 90)
@@ -1275,7 +1275,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "R15") (unit 1)
+          (reference "R301") (unit 1)
         )
       )
     )
@@ -1284,7 +1284,7 @@
   (symbol (lib_id "power:GND") (at 243.84 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 750efbd1-0fba-4168-b79b-3924f8192291)
-    (property "Reference" "#PWR020" (at 243.84 33.02 0)
+    (property "Reference" "#PWR0308" (at 243.84 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 31.75 0)
@@ -1300,7 +1300,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR0308") (unit 1)
         )
       )
     )
@@ -1309,7 +1309,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 199.39 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 758876f3-0564-4233-b8e8-eec62163b870)
-    (property "Reference" "SW6" (at 199.39 31.75 0)
+    (property "Reference" "SW302" (at 199.39 31.75 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LS Button" (at 199.39 34.29 0)
@@ -1326,7 +1326,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW6") (unit 1)
+          (reference "SW302") (unit 1)
         )
       )
     )
@@ -1354,7 +1354,7 @@
           (reference "J107") (unit 1)
         )
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "J1") (unit 1)
+          (reference "J303") (unit 1)
         )
       )
     )
@@ -1363,7 +1363,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 238.76 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 962a8e36-d784-47db-bd7e-769304b74618)
-    (property "Reference" "SW10" (at 238.76 59.69 0)
+    (property "Reference" "SW309" (at 238.76 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DPAD Up" (at 238.76 62.23 0)
@@ -1380,7 +1380,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW10") (unit 1)
+          (reference "SW309") (unit 1)
         )
       )
     )
@@ -1389,7 +1389,7 @@
   (symbol (lib_id "power:GND") (at 204.47 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9bbca27f-3cce-4e32-8448-22034ca188cb)
-    (property "Reference" "#PWR025" (at 204.47 73.66 0)
+    (property "Reference" "#PWR0306" (at 204.47 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 72.39 0)
@@ -1405,7 +1405,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR0306") (unit 1)
         )
       )
     )
@@ -1414,7 +1414,7 @@
   (symbol (lib_id "MCU_Microchip_ATmega:ATmega328PB-M") (at 35.56 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a2ba4a6e-1b1b-4335-a48a-a56493497f3f)
-    (property "Reference" "U4" (at 37.7541 113.03 0)
+    (property "Reference" "U301" (at 37.7541 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ATmega328PB-M" (at 37.7541 115.57 0)
@@ -1462,7 +1462,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "U4") (unit 1)
+          (reference "U301") (unit 1)
         )
       )
     )
@@ -1471,7 +1471,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 199.39 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b882b7e9-f9c7-4155-9d3f-3d614cbf5e15)
-    (property "Reference" "SW7" (at 199.39 44.45 0)
+    (property "Reference" "SW303" (at 199.39 44.45 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DPAD Right" (at 199.39 46.99 0)
@@ -1488,7 +1488,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW7") (unit 1)
+          (reference "SW303") (unit 1)
         )
       )
     )
@@ -1497,7 +1497,7 @@
   (symbol (lib_id "power:GND") (at 204.47 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb83baa7-61ef-425b-ac0d-722a5cf6c638)
-    (property "Reference" "#PWR023" (at 204.47 45.72 0)
+    (property "Reference" "#PWR0304" (at 204.47 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 44.45 0)
@@ -1513,7 +1513,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR0304") (unit 1)
         )
       )
     )
@@ -1541,7 +1541,7 @@
           (reference "J107") (unit 1)
         )
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "J2") (unit 1)
+          (reference "J302") (unit 1)
         )
       )
     )
@@ -1550,7 +1550,7 @@
   (symbol (lib_id "PCM_SL_Devices:Push_Button") (at 238.76 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid efb196c3-9751-4ba4-8e06-7aef5fd4c57b)
-    (property "Reference" "SW3" (at 238.76 19.05 0)
+    (property "Reference" "SW306" (at 238.76 19.05 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "B Button" (at 238.76 21.59 0)
@@ -1567,7 +1567,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "SW3") (unit 1)
+          (reference "SW306") (unit 1)
         )
       )
     )
@@ -1576,7 +1576,7 @@
   (symbol (lib_id "power:GND") (at 204.47 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f2ac2526-922f-4775-a6bf-ffc6ee92b58e)
-    (property "Reference" "#PWR022" (at 204.47 33.02 0)
+    (property "Reference" "#PWR0303" (at 204.47 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 31.75 0)
@@ -1592,7 +1592,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR0303") (unit 1)
         )
       )
     )
@@ -1620,7 +1620,7 @@
           (reference "J107") (unit 1)
         )
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "J4") (unit 1)
+          (reference "J304") (unit 1)
         )
       )
     )
@@ -1648,7 +1648,7 @@
           (reference "J107") (unit 1)
         )
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "J5") (unit 1)
+          (reference "J305") (unit 1)
         )
       )
     )
@@ -1657,7 +1657,7 @@
   (symbol (lib_id "Device:C") (at 30.48 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fea36d63-e432-417d-9375-9421003dd1f3)
-    (property "Reference" "C6" (at 26.67 172.72 0)
+    (property "Reference" "C301" (at 26.67 172.72 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100nF" (at 26.67 175.26 0)
@@ -1674,7 +1674,7 @@
     (instances
       (project "MOBO"
         (path "/2d62a3c1-c4f2-4921-9f6b-8dc8aef69d64/7ca0e1b4-2467-452a-8d82-c598e33fab6f"
-          (reference "C6") (unit 1)
+          (reference "C301") (unit 1)
         )
       )
     )
