@@ -580,9 +580,9 @@
     (uuid fc815772-0e49-45c5-b254-756f2afc365a)
   )
 
-  (label "ATMega Programming pins" (at 33.02 193.04 0) (fields_autoplaced)
+  (text "ATMega Programming Interface\n" (at 30.48 191.77 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid daf78f70-da55-4cb9-ba8a-64b1b4b88945)
+    (uuid ab98a023-92ee-4b9e-8c95-b38488979234)
   )
 
   (global_label "SCK" (shape input) (at 50.8 57.15 0) (fields_autoplaced)
