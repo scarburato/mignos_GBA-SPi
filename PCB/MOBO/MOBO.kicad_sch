@@ -1140,7 +1140,7 @@
     (property "Value" "RPi_GPio" (at 266.7 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" (at 265.43 123.19 0)
+    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_2x20_P2.00mm_Vertical" (at 265.43 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 265.43 123.19 0)
