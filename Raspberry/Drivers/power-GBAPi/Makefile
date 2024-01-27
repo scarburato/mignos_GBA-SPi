@@ -1,4 +1,4 @@
-obj-m += i2c_ATMega.o
+obj-m += power-GBAPi.o
 KDIR ?= /lib/modules/$(shell uname -r)/build
 
 all:
